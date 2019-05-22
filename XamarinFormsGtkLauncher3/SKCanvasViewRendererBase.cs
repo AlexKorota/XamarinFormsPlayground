@@ -7,7 +7,7 @@ using SKFormsView = SkiaSharp.Views.Forms.SKCanvasView;
 using SKNativeView = SkiaSharp.Views.Gtk.SKWidget;
 using SKNativePaintSurfaceEventArgs = SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs;
 
-namespace XamarinFormsGtkLauncher.SkiaRenderer
+namespace XamarinFormsGtkLauncher3.SkiaRenderer
 {
     public abstract class SKCanvasViewRendererBase<TFormsView, TNativeView> : ViewRenderer<TFormsView, TNativeView>
         where TFormsView : SKFormsView
@@ -66,9 +66,6 @@ namespace XamarinFormsGtkLauncher.SkiaRenderer
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             base.OnElementPropertyChanged(sender, e);
-            if (e.PropertyName == "width") {
-
-            }
         }
 
         protected override void Dispose(bool disposing)
